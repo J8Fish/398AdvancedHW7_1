@@ -38,10 +38,7 @@ class TestBasics(unittest.TestCase):
                 self.assertEqual(3, r2)
             except:
                     r3 = rpn.calculate("1 ~")
-                    self.assertEqual(-1, r3)
+                    self.assertEqual(-1, r3)'''
     def test_prev_ans(self):
         result = rpn.calculate("2 3 + :ans 7 +")
-        self.assertEqual(12, result)'''
-    def test_sum(self):
-        result = rpn.calculate("1 2 3 sum")
-        self.assertEqual(6, result)
+        self.assertEqual(12, result)
