@@ -3,7 +3,7 @@ import unittest
 import rpn
 
 class TestBasics(unittest.TestCase):
-    '''def test_add(self):
+    def test_add(self):
         result = rpn.calculate("1 1 +")
         self.assertEqual(2, result)
     def test_subtract(self):
@@ -38,7 +38,4 @@ class TestBasics(unittest.TestCase):
                 self.assertEqual(3, r2)
             except:
                     r3 = rpn.calculate("1 ~")
-                    self.assertEqual(-1, r3)'''
-    def test_prev_ans(self):
-        result = rpn.calculate("2 3 + :ans 7 +")
-        self.assertEqual(12, result)
+                    self.assertEqual(-1, r3)

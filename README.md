@@ -4,5 +4,15 @@
 
 Use ```coverage run``` to run your program.
 ```bash
-coverage run make test
+coverage run --source=. -m unittest
+```
+
+To see the result:
+```bash
+coverage report
+```
+
+To show the missing line:
+```bash
+coverage report -m
 ```
